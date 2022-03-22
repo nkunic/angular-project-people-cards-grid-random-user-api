@@ -1,0 +1,82 @@
+/* CHARSET */
+@charset "UTF-8";
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* HTML & BODY */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+/* HTML */
+html {
+  position: relative;
+  min-height: 100%;
+  box-sizing: border-box;
+  font-size: 87.5%;
+  @media (min-device-width: 768px) {
+    font-size: 100%;
+  }
+}
+
+/* BODY */
+body {
+  font-family: var(--font-body);
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  overflow-x: hidden;
+}
+
+/* HEADLINEs */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-body);
+  margin: 0;
+}
+
+/* PARAGRAPHS */
+p {
+  font: {
+    family: var(--font-body);
+    size: 1rem;
+    weight: normal;
+  }
+  color: var(--color-gray-dark);
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p + p {
+  margin-top: 0.625rem;
+}
+
+/* LINKS */
+a {
+  outline: 0;
+  text-decoration: none;
+  transition: all, 0.3s, ease-in-out;
+  &:hover {
+    text-decoration: none;
+  }
+  &:focus,
+  &:active {
+    text-decoration: none;
+    outline: 0;
+  }
+}
