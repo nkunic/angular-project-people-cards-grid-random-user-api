@@ -1,14 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { UserService } from '../../services/user.service';
-import { CardModel } from '../model/card.model';
 
 @Component({
-  selector: 'app-people-card-container',
-  templateUrl: './people-card-container.component.html',
-  styleUrls: ['./people-card-container.component.scss'],
+  selector: 'app-card-container',
+  templateUrl: './card-container.component.html',
 })
-export class PeopleCardContainerComponent implements OnInit {
-
+export class CardContainerComponent implements OnInit {
   user: any;
 
   constructor(private userService: UserService) {}
