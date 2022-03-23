@@ -1,26 +1,10 @@
-<div class="card">
-  <img
-    [src]="user?.picture?.large"
-    alt=""
-    width="150"
-    height="150"
-    class="rounded-circle img-thumbnail border-primary"
-  />
-  <div class="card-title">
-    <h3>
-      {{ user?.name?.title }}
-      {{ user?.name?.first }}
-      {{ user?.name?.last }}
-    </h3>
-  </div>
-  <div class="card-text">
-    {{ user?.email }}
-  </div>
-  <div class="card-text">
-    {{ user?.location?.city }}, {{ user?.location?.state }}
-  </div>
-  <div class="card-text">
-    {{ user?.phone }}
-  </div>
-  <div class="card-text">Registered on {{ user?.registered?.date | date }}</div>
-</div>
+<img [src]="user?.picture?.large" alt="" width="150" height="150" />
+<h3>
+  {{ user?.name?.title }}
+  {{ user?.name?.first }}
+  {{ user?.name?.last }}
+</h3>
+<p>{{ user?.email }}</p>
+<p>{{ user?.location?.city }}, {{ user?.location?.state }}</div>
+<p>{{ user?.phone }}</p>
+<p>{{ user?.registered?.date | date }}</p>

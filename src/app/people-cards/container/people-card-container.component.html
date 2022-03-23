@@ -1,17 +1,2 @@
-<h1 class="people-card__title">{{ title }}</h1>
-
-<p class="people-card__description">{{ description }}</p>
-
+<!--<ng-container *ngFor="let user of users"></ng-container>-->
 <app-card [user]="user" (getUser)="getUser()"></app-card>
-
-<div class="people-card__grid people-card__grid--16-9">
-  <ng-container *ngFor="let card of cards">
-    <app-people-card [imgRatio]="'16-9'" [card]="card"></app-people-card>
-  </ng-container>
-</div>
-
-<div class="people-card__grid people-card__grid--1-1">
-  <ng-container *ngFor="let card of cards">
-    <app-people-card [imgRatio]="'1-1'" [card]="card"></app-people-card>
-  </ng-container>
-</div>

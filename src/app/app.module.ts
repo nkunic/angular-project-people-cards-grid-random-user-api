@@ -3,26 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { PeopleCardsModule } from './people-cards/people-cards.module';
 import { AppComponent } from './app.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
-import { CardComponent } from './card/card.component';
 
 @NgModule({
   imports: [
-    BrowserModule, 
-    FormsModule, 
-    PeopleCardsModule, 
-    FontAwesomeModule,
-    HttpClientModule
+    BrowserModule,
+    FormsModule,
+    HttpClientModule,
+    PeopleCardsModule,
   ],
-  declarations: [
-    AppComponent,
-    CardComponent
-  ],
+  declarations: [AppComponent],
   providers: [],
-  bootstrap: [
-    AppComponent
-  ],
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
-
