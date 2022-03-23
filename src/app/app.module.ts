@@ -3,14 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-import { PeopleCardsModule } from './people-cards/people-cards.module';
+import { CardsModule } from './cards/cards.module';
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    PeopleCardsModule,
+    CardsModule,
   ],
   declarations: [AppComponent],
   providers: [],
